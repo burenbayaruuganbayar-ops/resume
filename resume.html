@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burenbayar Resume</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode header {
+    background: #000;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container" id="main">
+
+<header>
+    <h1>Burenbayar</h1>
+    <p>Student at Asia University</p>
+    <p>Student ID: 114021137</p>
+    <p>Email: burenbayaruuganbayar@gmail.com</p>
+</header>
+
+<div class="section">
+    <h2>About Me</h2>
+    <p>I am a student at Asia University with an interest in technology, programming, and continuous learning. I enjoy building projects and improving my technical skills.</p>
+</div>
+
+<div class="section">
+    <h2>Skills</h2>
+    <ul>
+        <li>Python Programming</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Basic Git & GitHub</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Education</h2>
+    <p>Asia University</p>
+    <p>Bachelor Student</p>
+</div>
+
+<div class="section">
+    <h2>Projects</h2>
+    <ul>
+        <li>Student Grade Calculator (Python)</li>
+        <li>Personal Resume Website</li>
+    </ul>
+</div>
+
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+</div>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
