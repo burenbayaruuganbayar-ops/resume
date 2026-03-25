@@ -9,52 +9,66 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f4f4f4;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
 }
 
 .container {
     max-width: 900px;
-    margin: auto;
+    margin: 40px auto;
     background: white;
-    padding: 20px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 header {
     text-align: center;
-    padding: 20px;
-    background: #333;
-    color: white;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 h1 {
-    margin: 0;
+    margin: 10px 0 5px;
 }
 
 .section {
-    margin: 20px 0;
+    margin-top: 25px;
 }
 
 .section h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #4facfe;
     padding-bottom: 5px;
 }
 
-button {
-    padding: 10px;
-    border: none;
-    background: #333;
-    color: white;
-    cursor: pointer;
-    margin-top: 10px;
+ul {
+    padding-left: 20px;
 }
 
-.dark-mode {
-    background: #121212;
-    color: white;
+li {
+    margin: 8px 0;
+    transition: 0.3s;
 }
 
-.dark-mode header {
-    background: #000;
+li:hover {
+    color: #4facfe;
+    transform: translateX(5px);
+}
+
+.card {
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #f0f8ff;
+    transform: scale(1.02);
 }
 
 </style>
@@ -62,36 +76,37 @@ button {
 
 <body>
 
-<div class="container" id="main">
+<div class="container">
 
 <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="profile-pic">
     <h1>Burenbayar</h1>
     <p>Student at Asia University</p>
     <p>Student ID: 114021137</p>
     <p>Email: burenbayaruuganbayar@gmail.com</p>
 </header>
 
-<div class="section">
+<div class="section card">
     <h2>About Me</h2>
-    <p>I am a student at Asia University with an interest in technology, programming, and continuous learning. I enjoy building projects and improving my technical skills.</p>
+    <p>I am a student at Asia University with an interest in technology, programming, and improving my skills. I enjoy building projects and learning new things.</p>
 </div>
 
-<div class="section">
+<div class="section card">
     <h2>Skills</h2>
     <ul>
         <li>Python Programming</li>
         <li>HTML, CSS, JavaScript</li>
-        <li>Basic Git & GitHub</li>
+        <li>Git & GitHub</li>
     </ul>
 </div>
 
-<div class="section">
+<div class="section card">
     <h2>Education</h2>
     <p>Asia University</p>
     <p>Bachelor Student</p>
 </div>
 
-<div class="section">
+<div class="section card">
     <h2>Projects</h2>
     <ul>
         <li>Student Grade Calculator (Python)</li>
@@ -99,15 +114,7 @@ button {
     </ul>
 </div>
 
-<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
 </div>
-
-<script>
-function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-}
-</script>
 
 </body>
 </html>
